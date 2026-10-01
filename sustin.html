@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MBS Care | Cum îmi susțin somnul?</title>
+
+  <style>
+    :root {
+      --brand: #B091A6;
+      --brand-dark: #98798F;
+      --background: #f7f7f5;
+      --card: #ffffff;
+      --text: #222222;
+      --muted: #686265;
+      --line: #e9e3e6;
+      --soft: #faf7f9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 16px 70px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--brand-dark);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5px 0 28px;
+    }
+
+    .eyebrow {
+      color: var(--brand-dark);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(36px, 8vw, 52px);
+      font-weight: 500;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* AUDIO */
+
+    .audio-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 18px;
+      text-align: center;
+      box-shadow: 0 8px 28px rgba(45,35,41,.04);
+    }
+
+    .audio-title {
+      margin: 0 0 5px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .audio-description {
+      margin: 0 0 15px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    audio {
+      width: 100%;
+      display: block;
+    }
+
+    /* CONTENT */
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: clamp(24px, 5vw, 38px);
+      box-shadow: 0 8px 28px rgba(45,35,41,.04);
+    }
+
+    .intro {
+      margin-bottom: 30px;
+    }
+
+    .step {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .step:first-of-type {
+      padding-top: 0;
+    }
+
+    .step:last-of-type {
+      border-bottom: 0;
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      margin-bottom: 8px;
+      background: var(--brand);
+      color: white;
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin: 5px 0 10px;
+      font-size: 19px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    .experiment {
+      margin-top: 30px;
+      padding: 22px;
+      background: var(--soft);
+      border-left: 4px solid var(--brand);
+      border-radius: 0 16px 16px 0;
+    }
+
+    .experiment h2 {
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 10px 0;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .final {
+      margin-top: 30px;
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      line-height: 1.55;
+    }
+
+    .home {
+      display: block;
+      margin-top: 30px;
+      padding: 18px;
+      background: var(--brand);
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 14px;
+      font-weight: 700;
+    }
+
+    .note {
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 10px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        padding: 20px 12px 50px;
+      }
+
+      .card,
+      .audio-card {
+        border-radius: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main class="container">
+
+  <a href="index.html" class="back">
+    ← Înapoi la Somn
+  </a>
+
+  <header class="hero">
+
+    <div class="eyebrow">
+      MBS Care · Corp · Somn
+    </div>
+
+    <h1>Cum îmi susțin somnul?</h1>
+
+    <p class="subtitle">
+      3 · SUSȚIN
+    </p>
+
+  </header>
+
+
+  <!-- AUDIO -->
+
+  <section class="audio-card">
+
+    <h2 class="audio-title">
+      🎧 Ascultă
+    </h2>
+
+    <p class="audio-description">
+      Preferi să asculți? Pornește versiunea audio.
+    </p>
+
+    <audio controls preload="metadata">
+      <source src="somn3.mp3" type="audio/mpeg">
+      Browserul tău nu suportă redarea audio.
+    </audio>
+
+  </section>
+
+
+  <!-- CONTENT -->
+
+  <article class="card">
+
+    <div class="intro">
+
+      <p>
+        Ai înțeles cum funcționează somnul și ai observat cum arată
+        somnul tău.
+      </p>
+
+      <p>
+        Acum poți interveni asupra câtorva dintre condițiile care îl
+        influențează.
+      </p>
+
+      <p>
+        Nu este nevoie să schimbi totul deodată.
+      </p>
+
+    </div>
+
+
+    <section class="step">
+
+      <div class="step-number">1</div>
+
+      <h2>Menține o oră de trezire relativ constantă</h2>
+
+      <p>
+        Ora de trezire reprezintă unul dintre reperele care contribuie
+        la stabilizarea ritmului somn–veghe.
+      </p>
+
+      <p>
+        Încearcă să păstrezi un program relativ constant și să eviți
+        diferențele foarte mari între zile.
+      </p>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">2</div>
+
+      <h2>Folosește lumina în favoarea ritmului tău</h2>
+
+      <p>
+        Lumina este unul dintre principalii sincronizatori ai ritmului
+        circadian.
+      </p>
+
+      <p>
+        În prima parte a zilei, caută expunerea la lumină naturală
+        atunci când este posibil.
+      </p>
+
+      <p>
+        Seara, reducerea luminii intense poate susține tranziția către
+        perioada de somn.
+      </p>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">3</div>
+
+      <h2>Observă momentul în care consumi cafeină</h2>
+
+      <p>
+        Cafeina interferează cu semnalizarea adenozinei, iar efectele
+        sale pot persista mai multe ore.
+      </p>
+
+      <p>
+        Dacă ai dificultăți de adormire sau somnul nu este
+        satisfăcător, observă dacă aportul de cafeină din a doua parte
+        a zilei contribuie.
+      </p>
+
+      <p>
+        Sensibilitatea diferă de la o persoană la alta.
+      </p>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">4</div>
+
+      <h2>Include mișcare regulată</h2>
+
+      <p>
+        Activitatea fizică regulată poate susține calitatea somnului
+        și sănătatea generală.
+      </p>
+
+      <p>
+        Observă și cum răspunde corpul tău la momentul în care faci
+        mișcare.
+      </p>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">5</div>
+
+      <h2>Creează o tranziție între zi și noapte</h2>
+
+      <p>
+        Corpul nu trece instantaneu de la activitate intensă la somn.
+      </p>
+
+      <p>
+        În ultimele 30–60 de minute înainte de culcare, redu treptat
+        activitățile foarte stimulante și creează o rutină simplă,
+        repetabilă.
+      </p>
+
+      <p>
+        Poate însemna lumină mai redusă, igienă personală, citit,
+        respirație liniștită sau alte activități calme.
+      </p>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">6</div>
+
+      <h2>Pregătește mediul pentru somn</h2>
+
+      <p>
+        Un mediu favorabil somnului este, în general:
+      </p>
+
+      <ul>
+        <li>întunecat;</li>
+        <li>liniștit;</li>
+        <li>confortabil;</li>
+        <li>cu o temperatură potrivită.</li>
+      </ul>
+
+      <p>
+        Scopul este reducerea stimulilor care pot întârzia sau
+        fragmenta somnul.
+      </p>
+
+    </section>
+
+
+    <section class="step">
+
+      <div class="step-number">7</div>
+
+      <h2>Nu încerca să forțezi somnul</h2>
+
+      <p>
+        Dacă rămâi trează în pat și apare frustrarea, încercarea
+        repetată de a te obliga să adormi poate menține starea de
+        activare.
+      </p>
+
+      <p>
+        Poți părăsi temporar patul, face o activitate liniștită în
+        lumină redusă și reveni atunci când reapare somnolența.
+      </p>
+
+    </section>
+
+
+    <div class="experiment">
+
+      <h2>Experimentul tău de 14 zile</h2>
+
+      <p>
+        Uită-te la ceea ce ai observat despre somnul tău și alege
+        <strong>1–2 lucruri</strong> pe care vrei să le ajustezi.
+      </p>
+
+      <p>
+        Păstrează-le timp de 14 zile și observă:
+      </p>
+
+      <ul>
+        <li>Cum adormi?</li>
+        <li>Cum dormi?</li>
+        <li>Cum te trezești?</li>
+        <li>Cum este energia ta în timpul zilei?</li>
+      </ul>
+
+      <p>
+        La final, întreabă-te:
+        <strong>Ce s-a schimbat?</strong>
+      </p>
+
+    </div>
+
+
+    <div class="final">
+      Nu urmărim un somn „perfect”.
+      <br><br>
+      Construim condiții care susțin un somn
+      <strong>suficient, regulat și de calitate.</strong>
+    </div>
+
+
+    <div class="note">
+      Dacă dificultățile de somn persistă, apare somnolență diurnă
+      importantă, sforăit intens cu pauze respiratorii sau alte
+      simptome semnificative, este indicată evaluarea de către un
+      profesionist medical.
+    </div>
+
+
+    <a href="index.html" class="home">
+      ← Înapoi la Somn
+    </a>
+
+  </article>
+
+
+  <footer>
+    MBS Care · Corp · Somn
+  </footer>
+
+</main>
+
+</body>
+</html>

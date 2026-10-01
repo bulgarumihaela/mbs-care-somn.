@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MBS Care | Somn</title>
+
+  <meta
+    name="description"
+    content="MBS Care | Corp — Înțelege, observă și susține somnul."
+  >
+
+  <style>
+    :root {
+      --brand: #B091A6;
+      --brand-dark: #98798F;
+      --background: #f7f7f5;
+      --card: #ffffff;
+      --text: #222222;
+      --muted: #686265;
+      --line: #e9e3e6;
+      --soft: #faf7f9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--text);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 45px 18px 70px;
+    }
+
+    /* HEADER */
+
+    .hero {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .eyebrow {
+      margin-bottom: 14px;
+
+      color: var(--brand-dark);
+
+      font-size: 12px;
+      font-weight: 700;
+
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: clamp(46px, 11vw, 68px);
+      font-weight: 500;
+
+      line-height: 1;
+    }
+
+    .subtitle {
+      max-width: 520px;
+      margin: 0 auto;
+
+      color: var(--muted);
+
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    /* CARDS */
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      display: block;
+
+      position: relative;
+
+      padding: 25px 24px;
+
+      background: var(--card);
+
+      border: 1px solid var(--line);
+      border-radius: 20px;
+
+      color: var(--text);
+      text-decoration: none;
+
+      box-shadow:
+        0 8px 28px
+        rgba(45, 35, 41, 0.04);
+
+      transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        border-color 0.18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+
+      border-color: var(--brand);
+
+      box-shadow:
+        0 12px 34px
+        rgba(45, 35, 41, 0.08);
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      margin-bottom: 8px;
+    }
+
+    .number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      flex-shrink: 0;
+
+      width: 42px;
+      height: 42px;
+
+      background: var(--soft);
+
+      border-radius: 50%;
+
+      color: var(--brand-dark);
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 20px;
+    }
+
+    .step {
+      color: var(--brand-dark);
+
+      font-size: 12px;
+      font-weight: 800;
+
+      letter-spacing: 0.11em;
+    }
+
+    .card h2 {
+      margin: 0;
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+      font-size: 25px;
+      font-weight: 500;
+    }
+
+    .card p {
+      margin: 12px 50px 0 56px;
+
+      color: var(--muted);
+
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .arrow {
+      position: absolute;
+
+      right: 23px;
+      top: 50%;
+
+      transform: translateY(-50%);
+
+      color: var(--brand);
+
+      font-size: 25px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      margin-top: 38px;
+
+      text-align: center;
+
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        padding: 35px 13px 50px;
+      }
+
+      .card {
+        padding: 22px 18px;
+      }
+
+      .card p {
+        margin-left: 56px;
+        margin-right: 35px;
+      }
+
+      .arrow {
+        right: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header class="hero">
+
+      <div class="eyebrow">
+        MBS Care · Corp
+      </div>
+
+      <h1>SOMN</h1>
+
+      <p class="subtitle">
+        Înțelege cum funcționează somnul,
+        observă cum arată somnul tău
+        și construiește condițiile care îl susțin.
+      </p>
+
+    </header>
+
+
+    <section class="cards">
+
+      <!-- 1. INTELEG -->
+
+      <a href="inteleg.html" class="card">
+
+        <div class="top">
+
+          <div class="number">
+            1
+          </div>
+
+          <div>
+            <div class="step">
+              ÎNȚELEG
+            </div>
+
+            <h2>
+              Cum funcționează somnul?
+            </h2>
+          </div>
+
+        </div>
+
+        <p>
+          Înțelege mecanismele de bază
+          care reglează somnul și de ce
+          acesta este important pentru organism.
+        </p>
+
+        <span class="arrow">
+          ›
+        </span>
+
+      </a>
+
+
+      <!-- 2. OBSERV -->
+
+      <a href="observ.html" class="card">
+
+        <div class="top">
+
+          <div class="number">
+            2
+          </div>
+
+          <div>
+            <div class="step">
+              OBSERV
+            </div>
+
+            <h2>
+              Cum este somnul meu?
+            </h2>
+          </div>
+
+        </div>
+
+        <p>
+          Oprește-te puțin și observă
+          cum dormi, cum te trezești
+          și cum funcționezi pe parcursul zilei.
+        </p>
+
+        <span class="arrow">
+          ›
+        </span>
+
+      </a>
+
+
+      <!-- 3. SUSTIN -->
+
+      <a href="sustin.html" class="card">
+
+        <div class="top">
+
+          <div class="number">
+            3
+          </div>
+
+          <div>
+            <div class="step">
+              SUSȚIN
+            </div>
+
+            <h2>
+              Cum îmi susțin somnul?
+            </h2>
+          </div>
+
+        </div>
+
+        <p>
+          Descoperă ce factori influențează
+          somnul și ce poți ajusta
+          în viața de zi cu zi.
+        </p>
+
+        <span class="arrow">
+          ›
+        </span>
+
+      </a>
+
+    </section>
+
+
+    <footer>
+      MBS Care · Corp · Somn
+    </footer>
+
+  </main>
+
+</body>
+</html>
